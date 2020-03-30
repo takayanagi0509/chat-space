@@ -11,15 +11,17 @@
 
 ### Association
 - has_many :messages
+- has_many :users_groups
 - has_many :groups, through: :users_groups
 
 ## groups_table
 |Column|Type|Options|
 |------|----|-------|
-|name|text| |
+|name|string|null: false, index: true|
 ### Association
--has_many :messages
--has_many :users, through: :users_groups
+- has_many :messages
+- has_many :users_groups
+- has_many :users, through: :users_groups
 
 ##messages_table
 |Column|Type|Options|
@@ -37,7 +39,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |users_id|references|null: false,foreign_kye: true|
-|text|text|null: false,foreign_kye: true|
+||text|null: false,foreign_kye: true|
 |groups_id|references|null: false, foreign_key: true|
 
 ### Association
