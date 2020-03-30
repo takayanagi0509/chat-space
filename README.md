@@ -29,7 +29,7 @@
 |body|text| |
 |imare|string| |
 |group_id|integer|null: false, foreign_kewy: true|
-|users_id|integer|null: false, foreign_kewy: true|
+|user_id|integer|null: false, foreign_kewy: true|
 
 ### Association
 -belogs_to group
@@ -38,9 +38,8 @@
 ## users_groups_table
 |Column|Type|Options|
 |------|----|-------|
-|users_id|references|null: false,foreign_kye: true|
-||text|null: false,foreign_kye: true|
-|groups_id|references|null: false, foreign_key: true|
+|user_id|references|null: false,foreign_kye: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 -belongs_to :group
