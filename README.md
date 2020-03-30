@@ -12,16 +12,16 @@
 ### Association
 - has_many :messages
 - has_many :users_groups_table
-- has_many :groups, through: :user_groups
+- has_many :groups, through: :users_groups
 
 ## groups_table
 |Column|Type|Options|
 |------|----|-------|
 |name|text| |
 ### Association
--has_many :message
+-has_many :messages
 -has_many :users_groups_table
--has_many :users, through: :user_groups
+-has_many :users, through: :users_groups
 
 ##messages_table
 |Column|Type|Options|
@@ -33,7 +33,7 @@
 
 ### Association
 -belogs_to group
--belogs_to users
+-belogs_to user
 
 
 ## users_groups_table
@@ -45,6 +45,6 @@
 
 ### Association
 
--has_many :message
+-has_many :messages
 -belongs_to :group
 -belongs_to :usere
