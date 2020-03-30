@@ -35,7 +35,6 @@
 -belogs_to group
 -belogs_to user
 
-
 ## users_groups_table
 |Column|Type|Options|
 |------|----|-------|
