@@ -1,4 +1,4 @@
-.front {
+.main_chat {
   width: calc(100% - 300px);
   .header {
     box-sizing: border-box;
@@ -23,13 +23,16 @@
       }
     }
     .right-header {
-      border: 1px solid  #38AEF0;
-      color:  #38AEF0;
+      border: 1px solid #38AEF0;
       float: right;
       height: 40px;
       line-height: 40px;
       margin-top: 28px;
       padding: 0 20px;
+      a{
+         text-decoration: none;
+         color: #38AEF0;
+      }
     }
   }
 
